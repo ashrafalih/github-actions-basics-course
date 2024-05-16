@@ -4,7 +4,7 @@ on:
 
 jobs:
   checkout-repo:
-    runs-on: latest-ubuntu
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: ls
