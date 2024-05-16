@@ -1,12 +1,12 @@
-name: Hello World
-
+name: shared actions Example
 on:
   workflow_dispatch:
 
 jobs:
-  print-hello-world:
-    runs-on: ubuntu-latest
-
+  checkout-repo:
+    runs-on: latest-ubuntu
     steps:
-      - name: Say hello
-        run: echo "Hello World"
+      - uses: actions/checkout@v2
+      - run: ls
+      
+  
